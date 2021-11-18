@@ -19,9 +19,9 @@ def getline():
     count = 0
     for line in Lines:
         count += 1
-        time.sleep(1)
         pyautogui.write(line.format(count, line.strip()))
         print(line.format(count, line.strip()))
+        time.sleep(1)
         break
 
         
