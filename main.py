@@ -1,32 +1,42 @@
 import keyboard
 import pyautogui
-import time
-import pygame
+
+#made by NightRyderrr
+#NightRyderrr8007 on discord
 
 
 file1 = open('numbers.txt', 'r')
 Lines = file1.readlines()
+#                            change if needed
+#detects if hotkey is pressed  |
+def getinput():               #\/
+    if keyboard.is_pressed('shift + ctrl')
+        return True
+    
 
-
-
+#gets line from numbers.txt and writes them
 def getline():
     count = 0
-    while keyboard.is_pressed('shift + ctrl'):
-        for line in Lines:
-            count += 1
-            time.sleep(1)
-     #   pyautogui.write(line)
-            print(line.format(count, line.strip()))
+    for line in Lines:
+        count += 1
+        time.sleep(1)
+        pyautogui.write(line.format(count, line.strip()))
+        print(line.format(count, line.strip()))
+        break
 
+        
 
-
-
-
-
-
-
+#main function
+#checks for input
+#if input == True , runs getline():
+#else: it passes
 while True:
-    getline()
+    getinput():
+    if getinput() == True:
+        getline():
+    else:
+        pass
+         
 
 
 
