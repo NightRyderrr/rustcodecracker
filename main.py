@@ -10,7 +10,7 @@ Lines = file1.readlines()
 #                            change if needed
 #detects if hotkey is pressed  |
 def getinput():               #\/
-    if keyboard.is_pressed('shift + ctrl')
+    if keyboard.is_pressed('shift + ctrl'):
         return True
     
 
